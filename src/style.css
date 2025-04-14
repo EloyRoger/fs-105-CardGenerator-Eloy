@@ -1,5 +1,34 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
+body {
+    font-family: Arial, "DejaVu Sans", sans-serif;
+    text-align: center;
+    background-color: green;
+}
 
-body{
+#carta {
+    width: 300px;
+    height: 500px;
     background: white;
+    margin: 20px auto;
+    /* padding: 20px; */
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+.value {
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 100px;
+}
+
+.suitTop {
+    font-size: 100px;
+    margin-bottom:15px;
+    padding-right: 200px;
+   
+}
+
+.suitButtom {
+    font-size: 100px;
+    margin-top: 80px;
+    padding-left: 200px;
 }
