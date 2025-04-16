@@ -1,21 +1,20 @@
 window.onload = function() {
   
-  let suitTops = ["♥", "♦", "♣", "♠"]; 
-  let suitButtoms = ["♥", "♦", "♣", "♠"];
+  let suits = ["♥", "♦", "♣", "♠"];
   let values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "J", "Q", "K"];
   
   function generarCarta() {
-  let suitButtom = suitButtoms[Math.floor(Math.random() * suitButtoms.length)];
-  let suitTop = suitTops[Math.floor(Math.random() * suitTops.length)];
+  let randomSuit = Math.floor(Math.random() * suits.length)
+  let suit = suits[randomSuit];
   let value = values[Math.floor(Math.random() * values.length)];
 
-  let color = (suitTop === "♥" || suitTop === "♦") ? "rojo" : "negro";
-// document.querySelector("#carta").textContent = '♥'
+  let color = (suit === "♥" || suit === "♦") ? "rojo" : "negro";
+document.querySelector
 
-document.getElementById("carta").innerHTML = `
-<div class="suitTop ${color}">${suitTop}</div>
+document.querySelector("#carta").innerHTML = `
+<div class="suitTop ${color}">${suit}</div>
 <div class="value ${color}">${value}</div>
-<div class="suitButtom ${color}">${suitButtom}</div>
+<div class="suitBottom ${color}">${suit}</div>
 `;
 }
 
