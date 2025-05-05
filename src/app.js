@@ -9,7 +9,6 @@ window.onload = function() {
   let value = values[Math.floor(Math.random() * values.length)];
 
   let color = (suit === "♥" || suit === "♦") ? "rojo" : "negro";
-document.querySelector
 
 document.querySelector("#carta").innerHTML = `
 <div class="suitTop ${color}">${suit}</div>

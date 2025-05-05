@@ -33,3 +33,11 @@ body {
     padding-right: 200px;
     transform:  rotate(180deg);
 }
+
+.rojo {
+    color: red;
+  }
+  
+  .negro {
+    color: black;
+  }
